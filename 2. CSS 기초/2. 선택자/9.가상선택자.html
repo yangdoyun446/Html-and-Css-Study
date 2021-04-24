@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a {
+        color: red;
+    }
+
+    a:hover {
+        font-size: 1.2em;
+        background: yellow;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: 0.5s;
+    }
+    .box:hover{
+        width: 200px;
+        color:orange;
+    }
+    .box:active{
+        width: 300px;
+        background: yellow;
+    }
+    input {
+        width: 100px;
+        border: 1px solid gray;
+        outline:none;
+        padding: 5px 1-px;
+        transition: 0.6s
+        }
+    input:focus {
+        border-color: blue;
+        width: 200px;
+    }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">google</a>
+    <div class="box"></div>
+    <br>
+    <input type="text">
+</body>
+</html>

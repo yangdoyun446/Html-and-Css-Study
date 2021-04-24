@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fruits > li:first-child {
+            color: red;
+        }
+        .fruits > li:last-child {
+            color: yellowgreen;
+        }
+        .fruits > li:nth-child(3){
+            color:orange;
+        }
+        .fruits > li:nth-child(5){
+            color: yellow;
+        }
+        .fruits > li:nth-child(2n){
+            background: green;
+        }
+        .fruits > li:nth-child(2n + 1){
+            font-size: 1.5em;
+        }
+
+        .food > p:nth-of-type(1){
+            background: red;
+        }
+
+        .food > span:nth-of-type(1){
+            font-size: 30px;
+        }
+        .fruits li {
+            list-style: none;
+        }
+        .fruits .orange{
+            list-style: circle;
+        }
+    </style>
+</head>
+<body>
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>라라라라</li>
+        <li>파인애플</li>
+        <li>복숭아</li>
+    </ul>
+    <hr>
+    <div class="food">
+        <div>순대국밥</div>
+        <p>순대국밥</p>
+        <p>순대국밥</p>
+        <span>순대국밥</span>
+    </div>
+</body>
+</html>

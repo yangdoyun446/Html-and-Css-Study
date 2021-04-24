@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/join">
+        아이디 : <input type="text"> <br>
+        비밀번호 : <input type="password" minlength="7" maxlength="14"><br>
+        이메일 : <input type="email"><br>
+        취미 : <br>
+        <input type="checkbox" class="ch"> 공부<br>
+        <input type="checkbox" class="ch" checked> 게임<br>
+        <input type="checkbox" class="ch" checked> 놀이<br>
+        <input type="checkbox" class="ch"> 독서<br>
+
+        이메일 수신여부 : 
+        <input type="radio" name="check" checked> 예
+        <input type="radio" name="check"> 아니오 <br>
+
+        커피 농도:
+        <input type="range" min="0" max="10" value="5"> <br>
+
+        주문 수량 :
+        <input type="number" value="1" min="1" max="10"> <br>
+
+        <button type="button">그냥버튼임</button><br>
+        <button type="submit">전송버튼임</button><br>
+        <button type="reset">초기화버튼임</button><br>
+    </form>
+</body>
+</html>

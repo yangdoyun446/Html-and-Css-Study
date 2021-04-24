@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="test.js"></script>
+
+
+    <style>
+        body {
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            border-bottom: 1px solid #ababab;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 20px;
+            flex: 1;
+        }
+
+        header nav ul {
+            display: flex;
+            flex: 1;
+        }
+
+        header nav ul li {
+            list-style: none;
+            margin-right: 5px;
+            padding: 10px;
+        }
+
+        header nav ul li a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.637);
+            font-style: 1.1em;
+        }
+
+        header nav ul li a:hover {
+            color: red;
+            background: yellow;
+        }
+        
+        section {
+            border: 1px dashed lightgray;
+            margin-top: 40px;
+            padding: 60px;
+            overflow: hidden;
+        }
+
+        section h2 {
+            color: red;
+            text-align: center;
+            border-bottom: 1px solid red;
+            width: 20%;
+            margin: 0 auto 30px;
+        }
+
+        section article {
+            height: 300px;
+            border: 2px solid blue;
+            padding: 30px;
+            width: 25%;
+            float: left;
+            margin-right: 2%;
+            text-align: center;
+        }
+
+        aside {
+            width: 163px;
+            height: 800px;
+            background: tomato;
+            position: absolute;
+            right: 5%;
+            top: 10%;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            margin-top: 60px;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: gray;
+            margin-right: 30px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>로고</h1>
+        <nav>
+            <ul>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">방명록</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>게시물 목록</h2>
+        <article>
+            <h3>게시물 제목1</h3>
+            <p>내용 blabla~~</p>
+        </article>
+        <article>
+            <h3>게시물 제목2</h3>
+            <p>내용 blabla~~</p>
+        </article>
+        <article>
+            <h3>게시물 제목3</h3>
+            <p>내용 blabla~~</p>
+        </article>
+    </section>
+
+    <aside>광고문의 <br>어쩌구저쩌구</aside>
+
+    <footer>
+        <a href="javascript:ah()">전화걸기</a>
+        <a href="mailto:ydy110527@kakao.com">메일 보내기</a>
+    </footer>
+</body>
+</html>

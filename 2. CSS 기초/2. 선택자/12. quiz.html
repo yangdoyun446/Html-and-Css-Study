@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list1 > li:nth-child(2n+1){
+            background: yellow;
+        }
+        #list1 > li:nth-child(2n){
+            background: gray;
+        }
+        #list1 > li:first-child{
+            color:red;
+        }
+        #list1 > li:last-child{
+            color: green;
+        }
+        #list1 > li:nth-child(2){
+            font-style: italic;
+        }
+        ul > li:first-child ~ .asdf, ul > li:first-child {
+            border: 2px dotted aqua
+        }
+
+        .asdf ~ li{
+            border: 2px dashed violet;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transition: 1s;
+        }
+        .box:hover{
+            background: red;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .box:active {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transition: 1s;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul id="list1">
+            <li>리스트 1</li>
+            <li class="asdf">리스트 2</li>
+            <li>리스트 3</li>
+            <li>리스트 4</li>
+            <li>리스트 5</li>
+            <li>리스트 6</li>
+            <li>리스트 7</li>
+        </ul>
+    </div>
+    <div class="box"></div>
+</body>
+</html>
