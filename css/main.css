@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* 공통 설정 */
+.wrap {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+header {
+    width: 100%;
+    /* background: red; */
+    background: rgba(0,0,0, 0.2);
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 200;
+}
+header .inner-header {
+    /* background: yellowgreen; */
+    width: 84%;
+    /* 마진값을 좌우 auto를 주면 박스중앙정렬 */
+    margin: 0 auto;
+}
+
+header .inner-header h1.logo {
+    float: left;
+    width: 200px;
+    /* background: orange; */
+}
+header .inner-header h1.logo img {
+    width: 100%;
+}
+header .inner-header .gnb {
+    float: left;
+    margin-left: 80px;
+}
+
+header .inner-header .gnb li {
+    float: left;
+    margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+
+header .inner-header .gnb li a:hover {
+    color: #ff8342;
+}
+
+
+header .inner-header .tnb {
+    float: right;
+}
+header .inner-header .tnb li {
+    float: left;
+    margin-right: 25px;
+}
+
+header .inner-header .tnb li a {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+header .inner-header .tnb li:last-child a {
+    display: block;
+    width: 105px;
+    line-height: 2;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 34px;
+}
+
+header .inner-header .tnb li:last-child a:hover {
+    background: #fff;
+    color: #ff8342;
+}
+
+header .inner-header .tnb li a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+header .inner-header .tnb li:last-child a i {
+    margin-right: 0;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/* 메인 섹션 스타일링 */
+section.main {
+    background: url(img/vis_4.jpg) no-repeat center/cover fixed;
+    height: 100vh;
+}
+
+section.main .main-title {
+    /* background: tomato; */
+    text-align: center;
+    color: #fff;
+    /* 박스 정중앙 배치 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-shadow: 2px 2px 10px rgba(0,0,0, 0.7);
+}
+
+section.main .main-title h2 {
+    font-size: 55px;
+}
+section.main .main-title p {
+    font-size: 25px;
+    margin: 20px 0;
+}
+section.main .main-title a {
+    display: block;
+    width: 180px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 8px 0;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.main .main-title a::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255, 0.4);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+section.main .main-title a:hover::after {
+    width: 100%;
+}
+
+/* 어바웃 섹션 스타일링 */
+section.about {
+    background: #fff;
+    padding: 80px 0;
+}
+
+section .title {
+    color: #000;
+    text-align: center;
+}
+
+section .title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section .title p {
+    font-size: 18px;
+    color: #555;
+}
+
+section.about ul {
+    /* background: orange; */
+    width: 74%;
+    margin: 30px auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section.about ul li {
+    float: left;
+    width: 33.33333%;
+}
+
+section.about ul li a .img-box {
+    overflow: hidden;
+}
+
+section.about ul li a .img-box img {
+    width: 100%;
+    transition: 0.7s;
+}
+
+section.about ul li a:hover .img-box img {
+    transform: scale(1.2);
+}
+
+section.about ul li a .text {
+    padding: 25px;
+}
+
+section.about ul li a .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section.about ul li a .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+section.about ul li a .text p.more {
+    /* 대문자로 변환 : lowercase (소문자) */
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 3px;
+}
+
+section.about ul li a .text p.more::before {
+    content: '\f30b';
+    font-family: "Font awesome 5 Free";
+    line-height: 1.8;
+
+    width: 30px;
+    height: 30px;
+    background: #ff8342;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+/* 이노베이션 스타일 */
+section.innovation {
+    /* background: tomato; */
+    margin-bottom: 150px;
+}
+
+section.innovation .img-box {
+    width: 74%;
+    height: 540px;
+    background: url('img/product_1.jpg') no-repeat center/cover;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+section.innovation .img-box .inner {
+    width: 80%;
+    background: #3a3c4e;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, 0)
+}    
+section.innovation .img-box .inner h3 {
+    background: #fff;
+    font-size: 18px;
+    padding: 25px 45px;
+    box-sizing: border-box;
+}
+section.innovation .img-box .inner .bottom {
+    padding: 35px 85px;
+    box-sizing: border-box;
+    color: #fff;
+}
+section.innovation .img-box .inner .bottom p{
+    float: left;
+    width: 70%;
+}
+section.innovation .img-box .inner .bottom a{
+    float: right;
+    background: #ff8342;
+    border-radius: 50px;
+}
+section.innovation .img-box .inner .bottom a:hover {
+    background: #f86010;
+}
+
+/* 섹션 me */
+section.me {
+    background: url(img/me.jpg) no-repeat center/cover;
+    padding: 70px 0;
+    margin-bottom: 150px;
+}
+
+
+
+section.me ul.list{
+    margin: 0 auto;
+    width: 80%; 
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+section.me ul.list li{
+    margin-top: 30px;
+}
+
+section.me ul.list li h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section.me ul.list li em{
+    float: left;
+    margin-right: 9px;
+}
+#incruit-btn {
+    width: 280px;
+    background: #ff8342;
+    padding: 10px 0;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+/* 섹션 sns 스타일 */
+section.sns ul li a .bottom p.time i{
+    margin-right: 5px;
+}
+section.sns {
+    margin-bottom: 60px;
+
+}
+section.sns ul {
+    width: 74%;
+    margin: 50px auto;
+}
+
+section.sns ul li{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+section.sns ul li:last-child {
+    margin-right: 0;
+}
+
+section.sns ul li a .img-box{
+    height: 251px;
+    overflow: hidden;
+    position: relative;
+}
+section.sns ul li a .img-box::before{
+    content: ' ';
+    width: 0;
+    height: 100%;
+    background: rgba(255, 131, 66, 0.8);
+    position: absolute;
+    transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+    width: 100%;
+}
+section.sns ul li a .img-box::after {
+    content: 'GO';
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px 30px;
+    position: absolute;
+    left: 50%;
+    transition: 0.5s;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%)
+}
+section.sns ul li a:hover .img-box::after {
+    opacity: 1;
+}
+section.sns ul li a .img-box img {
+    width: 100%;
+}
+section.sns ul li a .bottom{
+    padding: 20px 0 20px 30px;
+    box-sizing: border-box;
+}
+section.sns ul li a .bottom p{
+    font-size: 18px;
+    font-weight: 700;
+}
+section.sns ul li a.bottom p.color {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+section.sns ul li a.bottom p.time {
+    color: #999;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+/* 푸터 */
+footer{
+    padding: 30px 0;
+    border-top: 1px solid #999;
+}
+footer .inner {
+    width: 84%;
+    margin: 0 auto;
+}
+footer .inner .ft-logo{
+    float: left;
+    width: 14%;
+}
+footer .inner .ft-logo img{
+    width: 100%;
+}
+footer .inner address{
+    float: left;
+    margin-left: 100px;
+    margin-top: 24px;
+}
+footer .inner address p:first-child {
+    font-weight: 700;
+    margin-bottom: 10;
+}
+footer .inner address p:list-child {
+    color: #999
+};
+footer .inner .list{
+    float: right;
+    margin-top: 30px;
+}
+
+footer .inner .list li {
+    float: left;
+    margin-left: 80px;
+}
+footer .inner .list li a:hover {
+    color: #ff8342;
+    text-decoration: underline;
+}
+footer .inner .list li:last-child {
+    font-weight: 700;
+}
