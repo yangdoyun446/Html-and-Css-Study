@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <section id="food">
+        <div class="lunch rice">떡볶이</div>
+        <div class="lunch beef">소불고기</div>
+        <div class="lunch pork">돈까스</div>
+    </section>
+    <script>
+        //const $spicy=document.querySelector('.rice');
+        const $spicy=document.querySelector('div:first-child');
+        $spicy.style.fontSize='2em';
+        //만약 선택자로 인해 여러개의 태그가 선택되면 맨 처움 발견된 태그를 가져온다
+        const $lunch=document.querySelector('.lunch');
+        console.log($lunch);
+        const $lunches =document.querySelectorAll('.lunch');
+        console.log($lunches);
+        for(let $div of $lunches){
+            $div.style.color='skyblue';
+        }
+    
+    </script>
+</body>
+</html>

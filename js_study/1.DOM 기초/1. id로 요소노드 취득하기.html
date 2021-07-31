@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(2){
+            color:hotpink
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="pineapple">파인애플</li>
+        <li id="peach"> 복숭아</li>
+        <li id="mango">망고</li>
+        <li id="tomato">토마토</li>
+    </ul>
+
+    <script>
+        //script 태그 안에서는 자바스크립트 언어를 사용할 수 있습니다.
+      const $peach=document.getElementById('peach');
+      //콘솔화면에 테스트로그를 출력하는 함수
+      console.log($peach);
+      $peach.style.fontSize= '30px';
+      $peach.style.background = 'pink';
+
+      const $pineapple=document.getElementById('pineapple');
+
+      console.log($pineapple);
+      $pineapple.style.color='yellow';
+      $pineapple.style.fontSize= '30px';
+      $pineapple.style.fontWeight = 'bold';
+      $pineapple.style.textAlign='center';
+    
+      
+    </script>
+</body>
+</html>

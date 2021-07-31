@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li id='list_1' class="q">리스트1</li>
+        <li>리스트</li>
+        <li class="q e">리스트3</li>
+        <li class="e">리스트4</li>
+        <li class="q e">리스트5</li>
+        <li class="e">리스트6</li>
+        <li class="q e">리스트7</li>
+    </ul>
+    <script>
+         const $list_1=document.getElementById('list_1');
+         console.log($list_1);
+         $list_1.style.color = 'red';
+
+         //짝수는 even 홀수는 q
+        const $qlist= document.querySelectorAll('.q');
+        for (let $q of $qlist){
+        $q.style.background='yellow';
+        } 
+        const $elist= document.querySelectorAll('.e');
+        for (let $e of $elist){
+        $e.style.border='2px dashed skyblue';
+        } 
+    
+         
+        
+    </script>
+</body>
+</html>

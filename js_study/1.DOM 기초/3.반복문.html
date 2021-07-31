@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열(array, list):데이터를 순서대로 모아서 관리
+      const numbers=[2,4,8,16,32,64,128,256,512,1024,2048,4096 ];
+      console.log(numbers[0]);
+      //반복문:코드를 반복해서 실행
+      //for~of
+      //총합을 저장할 변수
+      let total=0
+      for (let n of numbers) {
+          total = total +n;
+      }
+      console.log('총합:'+total);
+      const gameList=['시공의_폭풍', '수면제_디아블로2', '틀타크래프트']
+      for (let game of gameList){
+      console.log(game+'_개노잼~');
+      }
+    </script>
+    
+</body>
+</html>
